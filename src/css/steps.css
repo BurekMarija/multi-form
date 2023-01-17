@@ -1,0 +1,67 @@
+.title {
+  color: hsl(213, 96%, 18%);
+}
+
+.smallGrey {
+  font-size: 14px;
+  color: hsl(231, 11%, 63%);
+}
+
+.info {
+  margin-left: 50px;
+  position: relative;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: x-small;
+  font-weight: 600;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 25px;
+  max-width: 300px;
+  width: 100%;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  height: 30px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(231, 100%, 99%);
+  bottom: 10px;
+  right: 0px;
+}
+
+.planBox {
+  display: flex;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid hsl(228, 100%, 84%);
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.plan img {
+  width: 30px;
+  margin-bottom: 10px;
+}
