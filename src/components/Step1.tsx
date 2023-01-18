@@ -26,7 +26,7 @@ export default function Step1() {
   }
 
   console.log(data);
-  console.log(data.email);
+  console.log(data.name);
   return (
     <div className="stepCard">
       <div className="title">
@@ -62,7 +62,9 @@ export default function Step1() {
           placeholder="e.g. +1234567890"
         ></input>
       </div>
-      <button onClick={nextStep}>Next step</button>
+      <button className="buttonNext" onClick={nextStep}>
+        Next step
+      </button>
     </div>
   );
 }

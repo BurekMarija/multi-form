@@ -7,6 +7,33 @@
   color: hsl(231, 11%, 63%);
 }
 
+.timeline {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  width: 30px;
+  height: 15px;
+  background-color: black;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.ball {
+  top: 2px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 6px;
+  position: absolute;
+  background-color: hsl(231, 11%, 63%);
+}
+
 .info {
   margin-left: 50px;
   position: relative;
@@ -34,7 +61,7 @@ input {
   cursor: pointer;
 }
 
-button {
+.buttonNext {
   position: absolute;
   height: 30px;
   width: 90px;
@@ -44,6 +71,18 @@ button {
   color: hsl(231, 100%, 99%);
   bottom: 10px;
   right: 0px;
+}
+
+.buttonBack {
+  position: absolute;
+  height: 30px;
+  width: 90px;
+  color: hsl(213, 96%, 18%);
+  bottom: 10px;
+  left: 0px;
+  border: none;
+  background-color: inherit;
+  text-decoration: underline;
 }
 
 .planBox {
