@@ -49,7 +49,7 @@ label {
   font-weight: 600;
 }
 
-input {
+.input {
   margin-top: 5px;
   margin-bottom: 15px;
   height: 25px;
@@ -103,4 +103,13 @@ input {
 .plan img {
   width: 30px;
   margin-bottom: 10px;
+}
+
+.add-on {
+  display: flex;
+  align-items: center;
+}
+
+.adOnInfo {
+  margin: 10px;
 }

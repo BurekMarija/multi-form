@@ -13,14 +13,8 @@ export default function Step(props: Props) {
   const step = useSelector((state) => state.stepReducer);
   const dispatch = useDispatch();
 
-  console.log(step);
-  function klik() {
-    dispatch(setStep(props.index));
-    console.log(step);
-  }
-
   return (
-    <div className="step" onClick={klik}>
+    <div className="step">
       <div
         className="stepNumber"
         style={{

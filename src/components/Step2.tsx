@@ -6,23 +6,14 @@ import pro from "../images/icon-pro.svg";
 import { setMonthly } from "../reducer/timelineReducer";
 import { useDispatch } from "react-redux";
 import { useSelector } from "..";
-import { setStep } from "../reducer/stepReducer";
+import Buttons from "./Buttons";
 
 export default function Step2() {
   const monthly = useSelector((state) => state.timelineReducer);
-  const step = useSelector((state) => state.stepReducer);
   let dispatch = useDispatch();
 
   function slide() {
     dispatch(setMonthly());
-  }
-
-  function back() {
-    dispatch(setStep(step - 1));
-  }
-
-  function next() {
-    dispatch(setStep(step + 1));
   }
 
   return (
@@ -61,12 +52,7 @@ export default function Step2() {
           <label>Yearly</label>
         </div>
 
-        <button onClick={back} className="buttonBack">
-          Go Back
-        </button>
-        <button onClick={next} className="buttonNext">
-          Next step
-        </button>
+        <Buttons />
       </div>
     </div>
   );

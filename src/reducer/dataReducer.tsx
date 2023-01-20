@@ -1,20 +1,24 @@
+import { AnyAction } from "@reduxjs/toolkit";
+interface Plan {
+  name: string;
+  price: number;
+}
+
 export interface UserData {
   name: string | null;
   email: string | null;
   phone: string | null;
-  plan: string | null;
+  plan: Plan | null;
 }
 
 const dataReducer = (
-  state: UserData = {
+  state = {
     name: null,
     email: null,
     phone: null,
-    plan: null,
+    plan: { name: "", price: 0 },
   },
-  action: ReturnType<
-    typeof setName | typeof setEmail | typeof setPhone | typeof setPlan
-  >
+  action: AnyAction
 ) => {
   switch (action.type) {
     case "SET_NAME":
@@ -53,7 +57,7 @@ export const setPhone = (data: string | null) => {
   };
 };
 
-export const setPlan = (data: string | null) => {
+export const setPlan = (data: Plan | null) => {
   return {
     type: "SET_PLAN",
     payload: data,
